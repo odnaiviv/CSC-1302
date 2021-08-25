@@ -4,11 +4,7 @@
  * July 06, 2021
  *
  * Homework 4: Task 1 (Fraction Scale)
- * This is the FractionScale class that will prompt the user to input a fraction.
- * The fraction that the user inputted will then be broken down and converted into an integer.
- * This class will also prompt the user to scale the fraction by the user's desired factor.
- */
-//importing user input scanner class
+
 import java.util.Scanner;
 public class hw4_FractionScale {
 
