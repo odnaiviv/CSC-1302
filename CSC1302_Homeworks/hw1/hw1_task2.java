@@ -5,6 +5,7 @@
  */
 
 import java.util.Scanner;
+
 public class hw1_task2 {
 
     //swapDigitPairs method
