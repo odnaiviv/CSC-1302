@@ -1,24 +1,17 @@
 /*
- * Vivian Do
- * ID: 002-48-6640
  * July 20, 2021
  *
  * Homework 6: Task 2 (Colored Point)
- * This is the Colored Point class that implements Colored interface and extends Point class. This class gives the Point class colors
- * and compares the colors with one another to see if the colors are equal or not.
  */
-//ignore package because I'm using a different IDE
-package HW6;
 
-//creating class that implements Colored interface and extends Point class
-//give Point class colors
+//giving Point class colors
 public class ColoredPoint extends Point implements Colored {
-	//initializing private instance variable
+	//private instance variable
 	private String color;
 	
-	//constructor to initialize variables
+	//constructor
 	public ColoredPoint(int x, int y, String color) {
-		//super to call and refer to the Color interface and Point class object
+		//super to call & refer to the Color interface and Point class object
 		super(x, y);
 		this.color = color;
 	}
@@ -28,7 +21,7 @@ public class ColoredPoint extends Point implements Colored {
 		color = clr;
 	}
 	
-	//first override method to get and return color in this class
+	//first override method to get & return color in this class
 	@Override
 	public String getColor() {
 		return color;
@@ -41,7 +34,7 @@ public class ColoredPoint extends Point implements Colored {
 		return super.equals(obj) && (other.getColor().equals(color));
 	}
 	
-	//third override method to implement and return this toString method
+	//third override method to implement & return this toString method
 	@Override
 	public String toString() {
 		return super.toString() + ", Color: " + getColor();
