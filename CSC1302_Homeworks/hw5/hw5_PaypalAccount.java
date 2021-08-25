@@ -1,14 +1,10 @@
 /*
- * Vivian Do
- * ID: 002-48-6640
  * July 13, 2021
  *
  * Homework 5: Task 1 (Paypal Account)
- * This is the Paypal Account class that initializes the instance variables and creates class constructors
- * in order to set the values of the account id and balances.
  */
 public class hw5_PaypalAccount {
-    //initializing instance variables for balance and accountID
+    //creating instance variables for balance & accountID
     double balance;
     int accountID;
 
