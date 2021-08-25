@@ -1,16 +1,12 @@
 /*
- * Vivian Do
- * ID: 002-48-6640
  * July 13, 2021
  *
  * Homework 5: Task 1 (Bank)
- * This is the Bank class that initializes the given objects and variables. It's usually the main program that basically does everything.
- * This program prompts user to enter number of accounts, hold the number of accounts in an array, does the math and calculations of the total,
- * highest, and lowest balances through loops, and prints out the end results of the overall program formatted to float by 1 decimal place.
  */
-//importing scanner user input and random classes
+
 import java.util.Scanner;
 import java.util.Random;
+
 public class hw5_Bank {
     public static void main(String[] args){
         //initializing the given objects and variables
