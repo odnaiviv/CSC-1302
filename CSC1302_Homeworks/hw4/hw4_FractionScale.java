@@ -5,6 +5,7 @@
  */
 
 import java.util.Scanner;
+
 public class hw4_FractionScale {
 
     public static void main(String[] args) {
