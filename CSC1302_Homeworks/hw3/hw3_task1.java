@@ -5,6 +5,7 @@
  */
 
 import java.util.Scanner;
+
 public class hw3_task1 {
     //main method
     public static void main(String[] args){
