@@ -1,13 +1,9 @@
 /*
- * Vivian Do
- * ID: 002-48-6640
  * July 06, 2021
  *
  * Homework 4: Task 1 (Fraction)
- * This is the Fraction class that will add, divide, scale up, and scale down the
- * fraction as provided in the FractionScale class.
- * The calculations and changing the numerator and denominator of the fraction will all occur in this program.
  */
+
 public class hw4_Fraction {
     //instance variables = numerator and denominator of the fraction
     private int numerator;
