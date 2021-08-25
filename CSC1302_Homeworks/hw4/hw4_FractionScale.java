@@ -4,30 +4,28 @@
  * July 06, 2021
  *
  * Homework 4: Task 1 (Fraction Scale)
+ */
 
 import java.util.Scanner;
 public class hw4_FractionScale {
 
     public static void main(String[] args) {
-        //creating user input Scanner
         Scanner scan = new Scanner(System.in);
-        //prints the beginning of program
-        System.out.println("This program performs the scaling operations on a fraction.");
 
-        //prompts user to input a fraction
+        System.out.println("This program performs the scaling operations on a fraction.");
+        //prompts user to input fraction
         System.out.print("Enter a fraction: ");
         String fraction = scan.nextLine();
 
-        //creating the fraction using String
-        //initializing the slash / as an int
+        //creating the fraction using String & using slash / as an int
         int slash = fraction.indexOf("/");
 
-        //storing the numerator as the first number before the slash
+        //storing the numerator as the first number before slash
         String numerator = fraction.substring(0, slash).trim();
-        //storing the denominator as the second number after the slash
+        //storing the denominator as the second number after slash
         String denominator = fraction.substring(slash + 1).trim();
 
-        //converting the numerator and denominator String into int
+        //converting numerator & denominator String into int
         int num = Integer.parseInt(numerator);
         int denom = Integer.parseInt(denominator);
 
@@ -36,11 +34,11 @@ public class hw4_FractionScale {
 
         //prompting user to scale up or down
         System.out.print("Scale up or down (1: up, 0: down): ");
-        //initializing scale as an int from the user input
+        //initializing scale as an int from user input
         int scale = scan.nextInt();
-        //while loop to check if the number entered was legal or not
+        //checking to see if input was legal or not
         while (scale != 1 && scale != 0) {
-            //if number was illegal, program will then prompt user to try again
+            //prompting user to enter in a different number if number was illegal
             System.out.println("ERROR! The number you entered was not 0 or 1.");
             System.out.print("Scale up or down (1: up, 0: down): ");
             scale = scan.nextInt();
