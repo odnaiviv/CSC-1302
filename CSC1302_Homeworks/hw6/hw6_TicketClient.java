@@ -14,7 +14,7 @@ public class hw6_TicketClient {
         hw6_Ticket t4 = new hw6_StudentAdvanceTicket(37, 19);
         hw6_Ticket t5 = new hw6_StudentAdvanceTicket(43, 6);
 
-        //printing results from Ticket classes
+        //printing results from corresponding Ticket classes
         System.out.println(t1);
         System.out.println(t2);
         System.out.println(t3);
