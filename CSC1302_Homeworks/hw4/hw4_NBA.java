@@ -72,7 +72,7 @@ public class hw4_NBA {
                 System.out.println(Spurs.teamName() + "***WIN the series***");
             }
         }
-        //prints the score results of each team & player on the team
+        //printing score results of each team & player on the team
         System.out.println(Heat);
         System.out.println(Spurs);
     }
