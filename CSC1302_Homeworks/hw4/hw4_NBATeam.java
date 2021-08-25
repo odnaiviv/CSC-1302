@@ -5,6 +5,7 @@
  */
 
 import java.util.Arrays;
+
 public class hw4_NBATeam {
     //initializing the given private Strings, ints, and array
     private String sTeamName;
