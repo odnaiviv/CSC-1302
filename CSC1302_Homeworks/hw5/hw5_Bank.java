@@ -9,87 +9,85 @@ import java.util.Random;
 
 public class hw5_Bank {
     public static void main(String[] args){
-        //initializing the given objects and variables
-        //number of accounts
+        //initializing the given objects/variables
         int numOfAccount;
-        //temporary storing the balance double at 0
+        //temporary storing the balance double to 0
         double bal = 0;
         //random number generator
         Random rand = new Random();
-        //user input scanner
         Scanner scan = new Scanner(System.in);
 
         //prompting user to enter a number of accounts to create
         System.out.print("Enter the number of accounts to generate: ");
         numOfAccount = scan.nextInt();
-        //if loop to check for if the inputted number exceeds the 1000 maximum
+        //checking to see if inputted number exceeds the 1000 maximum
         if (numOfAccount > 1000) {
-            //tells the user an error if number of account is greater than 1000
+            //error message if user exceeds the maximum
             System.out.println("ERROR! The number of accounts to generate in the bank should be less than 1000.");
         }
 
         //creating an array to hold the numOfAccount account objects
         hw5_PaypalAccount[] ppaccArray = new hw5_PaypalAccount[numOfAccount];
-        //for loop to store the values of numOfAccount objects in the array
+        //storing the values of numOfAccount objects in array
         for (int i = 0; i < numOfAccount; i++) {
-            //creating the random balance number
+            //creating random balance number
             bal = rand.nextDouble() * (1000.0 - 0.0) + 0.0;
             ppaccArray[i] = new hw5_PaypalAccount(i, bal);
         }
 
         //creating the GSU campus ID as a String by using my panther id
         String pantherID = "002-48-6640";
-        //initializing account from first 3 numbers of panther id
+        //making account from first 3 numbers of panther id
         int thisAcc = Integer.parseInt(pantherID.substring(0, 3));
 
-        //initializing total, largest, and lowest balances as doubles and temporary storing the largest and lowest account ids as 0's
+        //initializing total, largest, and lowest balances as doubles and temporary storing the largest & lowest account ids as 0's
         double totalBal = 0;
         double largeBal = ppaccArray[0].balance;
         double lowBal = ppaccArray[0].balance;
         int largeAcc = 0;
         int lowAcc = 0;
-        //creating a boolean to find account
+        //boolean to find account
         boolean accFound = false;
 
-        //for loop to count the iterations in the array for the account
+        //counting iterations in the array for account
         for (int i = 0; i < numOfAccount; i++) {
-            //if statement to print when account has been found
+            //printing when account is found
             if (ppaccArray[i].accountID == thisAcc) {
                 accFound = true;
                 i = numOfAccount + 1;
                 //prints panther id and its balance
                 System.out.print("\nMy Panther ID is " + pantherID + "; my bank account ID is " + thisAcc);
                 System.out.print(" and balance is: $");
-                //printf to format and float the results of the balance
+                //printf to format & float results of the balance
                 System.out.printf("%.1f", ppaccArray[numOfAccount - 1].balance);
                 System.out.println();
             }
         }
-        //if statement to print when account has not been found
+        //printing when account is not found
         if (!accFound) {
             ppaccArray[numOfAccount - 1].accountID = thisAcc;
             ppaccArray[numOfAccount - 1].balance = Double.parseDouble(pantherID.substring(4, 6) + pantherID.substring(8, pantherID.length()))/100.0;
             //prints panther id and its balance
             System.out.print("\nMy Panther ID is " + pantherID + "; my bank account ID is " + thisAcc);
             System.out.print(" and my balance is: $");
-            //printf to format and float the results of the balance
+            //printf to format & float results of the balance
             System.out.printf("%.1f", ppaccArray[numOfAccount - 1].balance);
             System.out.println();
         }
 
-        //for loop to find the largest and lowest account balances
+        //finding the largest and lowest account balances
         for (int i = 0; i < numOfAccount; i++) {
-            //if statement to find the largest balance in the array and assigns largeAcc its own account id
+            //when the largest balance in the array is found; assigning largeAcc with its own account id
             if (ppaccArray[i].balance > largeBal) {
                 largeBal = ppaccArray[i].balance;
                 largeAcc = i;
             }
-            //if statement to find the lowest balance in the array and assigns lowAcc its own account id
+            //when the lowest balance in the array is found; assigning lowAcc with its own account id
             if (ppaccArray[i].balance < lowBal) {
                 lowBal = ppaccArray[i].balance;
                 lowAcc = i;
             }
-            //finding the total balance of all the account balances
+            //finding the total balance of all account balances
             totalBal = totalBal + ppaccArray[i].balance;
         }
         //calculating the average balance
