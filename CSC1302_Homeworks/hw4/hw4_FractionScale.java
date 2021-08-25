@@ -1,6 +1,4 @@
 /*
- * Vivian Do
- * ID: 002-48-6640
  * July 06, 2021
  *
  * Homework 4: Task 1 (Fraction Scale)
