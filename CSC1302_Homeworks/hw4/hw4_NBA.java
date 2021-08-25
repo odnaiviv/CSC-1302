@@ -3,6 +3,7 @@
  *
  * Homework 4: Task 2 (NBA)
  */
+
 import java.util.Scanner;
 public class hw4_NBA {
     public static void main(String[] args){
