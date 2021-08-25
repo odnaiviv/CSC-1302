@@ -1,14 +1,11 @@
 /*
- * Vivian Do
- * ID: 002-48-6640
  * July 06, 2021
  *
  * Homework 4: Task 2 (NBA Team)
- * This is the NBATeam class program that stores the names of the players on each team
- * and calculates the number of wins and losses each team has throughout a series of games in the program.
  */
-//importing array class
+
 import java.util.Arrays;
+
 public class hw4_NBATeam {
     //initializing the given private Strings, ints, and array
     private String sTeamName;
@@ -16,17 +13,17 @@ public class hw4_NBATeam {
     private int nLoss;
     private String[] playerArray = new String[1];
     //initializing additional private objects
-    //int for counting in loops
+
     private int counting = 0;
     //array to temporary store values in String
     private String[] tempArray = new String[1];
 
-    //constructor for making and storing the teams
+    //constructor to make & store the teams
     public hw4_NBATeam(String name) {
         sTeamName = name;
     }
 
-    //instance method to return the name of the team
+    //instance method to return team name
     public String teamName() {
         return sTeamName;
     }
@@ -37,7 +34,7 @@ public class hw4_NBATeam {
         //if the number of players in the array is one, then this loops will run
         if (counting == 1) {
             playerArray[counting - 1] = playerName;
-            //for loop to temporary swap the number of players in the array
+            //loop to temporary swap the number of players in array
             for (int i = 1; i < playerArray.length; i++) {
                 tempArray[i] = playerArray[i];
             }
@@ -45,14 +42,13 @@ public class hw4_NBATeam {
         //if the number of players in the array is not one, then this loop will run
         else {
             playerArray = new String[counting];
-            //for loop to count the number of elements there are in the array
-            //this will then sway the player array with the temporary array
+            //counting number of elements in array; this swaps the player array with the temporary array
             for (int i = 0; i < tempArray.length; i++) {
                 playerArray[i] = tempArray[i];
             }
             playerArray[counting - 1] = playerName;
             tempArray = new String[counting];
-            //for loop to swap the temporary array back with the player array
+            //swapping the temporary array back with the player array
             for (int i = 0; i < playerArray.length; i++) {
                 tempArray[i] = playerArray[i];
             }
