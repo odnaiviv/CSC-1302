@@ -3,6 +3,7 @@
  *
  * Homework 1: Task 1 (ChrisTree)
  */
+
 public class hw1_task1 {
     public static void main(String[] args) {
         //you can change the numbers in segment and height;
