@@ -1,14 +1,12 @@
 /*
- * Vivian Do
- * ID: 002-48-6640
  * June 11, 2021
  *
  * Lab 2: Task 2 (BMI)
  */
 import java.util.Scanner;
+
 public class lab2_task2 {
     public static void main(String[] args){
-        //creating a Scanner/user input
         Scanner scan = new Scanner(System.in);
         //user inputs name
         System.out.println("Input Name: ");
@@ -22,9 +20,9 @@ public class lab2_task2 {
         boolean validInput = scan.hasNextDouble();
         double weight;
         String weight2 = "test";
+        //when user inputs correctly
         if (validInput == true) {
             weight = scan.nextDouble();
-            //when user inputs correctly
         }
         //if user inputs incorrectly, else part will prompt instead & gives user one more chance to input correctly
         else {
