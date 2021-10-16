@@ -1,12 +1,11 @@
 /*
- * Vivian Do
- * ID: 002-48-6640
  * June 18, 2021
  *
  * Lab 4: Task 1 (Count Digits)
  */
 //importing user input Scanner class
 import java.util.Scanner;
+
 public class lab4_task1 {
     //main method
     public static void main(String[] args){
@@ -21,7 +20,7 @@ public class lab4_task1 {
         //printing results of countDigit method and showing the number of digits user has inputted
         System.out.println("There are " + countingNumbers + " digits in your inputted number " + num + ".");
     }
-    //countDigit method to count the number of digits in a user inputted variable
+    //method to count the number of digits in a user inputted variable
     public static int countDigit(int num) {
         //initializing temporary variable to count numbers
         int counting = 0;
