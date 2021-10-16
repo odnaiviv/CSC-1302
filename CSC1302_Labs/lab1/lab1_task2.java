@@ -1,6 +1,4 @@
 /*
- * Vivian Do
- * ID: 002-48-6640
  * June 11, 2021
  *
  * Lab 1: Task 2
@@ -32,9 +30,9 @@ public class lab1_task2 {
     }
     //The method to calculate the area of the square
     public static void Area(int n){
-        //initializes the equation for the area of the square
+        //initializes equation for the area of the square
         int area = (n * n);
-        //prints area results in next line
+        //printing area results
         System.out.println("\nThe area of this square is: " + area);
     }
     //printing out the square
