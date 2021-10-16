@@ -1,6 +1,4 @@
 /*
- * Vivian Do
- * ID: 002-48-6640
  * June 11, 2021
  *
  * Lab 2: Task 1
@@ -14,7 +12,7 @@ public class lab2_task1 {
         double sum = 0;
         double sum2 = 0;
         //determines whether n is even or odd
-        if (m%2 == 0) {
+        if (m % 2 == 0) {
             //when m is even
             //calculates even equation 1
             for(double i = 2; i <= m; i = i + 2) {
